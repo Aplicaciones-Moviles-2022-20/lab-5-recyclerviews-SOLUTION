@@ -18,6 +18,7 @@ class CatItemAdapter(
     val catName = itemView.findViewById<TextView>(R.id.catName_textView_item)
     //TODO 2: agrega el atributo agregado a continuación. Recuerda agregar un
     // textView en el archivo cat_item.xml para que puedas visualizarlo
+    val catColor: TextView = itemView.findViewById(R.id.catColor_textView_item)
   }
 
   override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
