@@ -35,12 +35,14 @@ class CatItemAdapter(
     val cat: Cat = cats[position]
 
     val name = holder.catName
+    val color = holder.catColor
     val detailsButton = holder.catItem
     // TODO 4: escribe el atributo que agregaste aquí
     // luego, haz que obtenga el valor que contiene el
     // atributo del objeto "cat"
 
     name.text = cat.name
+    color.text = cat.color
 
     detailsButton.setOnClickListener {
       actionListener.goToCatDetails(cat)
