@@ -6,4 +6,5 @@ package cl.uandes.catsapp.data.model
 // InMemoryDatasource
 data class Cat(
   val name: String,
+  val color: String
 )
