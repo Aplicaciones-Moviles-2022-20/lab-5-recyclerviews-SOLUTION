@@ -6,15 +6,28 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import cl.uandes.catsapp.R
+import cl.uandes.catsapp.databinding.FragmentCatDetailsBinding
+import cl.uandes.catsapp.data.datasources.InMemoryDatasource
 
 class CatDetailsFragment : Fragment() {
+
+  private lateinit var binding: FragmentCatDetailsBinding
 
   override fun onCreateView(
     inflater: LayoutInflater, container: ViewGroup?,
     savedInstanceState: Bundle?,
   ): View? {
     // Inflate the layout for this fragment
-    return inflater.inflate(R.layout.fragment_cat_details, container, false)
+    binding = FragmentCatDetailsBinding.inflate(inflater, container, false)
+    return binding.root
+  }
+
+  override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    super.onViewCreated(view, savedInstanceState)
+//    find cat in InMemoryDataSource by name
+    val cat = InMemoryDatasource.cats.find { it.name == arguments?.getString("catName") }
+    binding.catNameTextView.text = cat?.name
+    binding.catColorTextView.text = cat?.color
   }
 
 }

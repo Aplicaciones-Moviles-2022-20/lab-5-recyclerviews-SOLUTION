@@ -37,11 +37,17 @@ Se utilizan de la siguiente manera:
 En este laboratorio deberás realizar lo siguiente:
 
 TODO 1: agregar un atributo al modelo Cats. [/0.5pts]
+
 TODO 2: Agregar dicho atributo en el Adapter (ir al archivo `CatItemAdapter.kt` para más información) [/1pts]
+
 TODO 3: Escribir en el README lo pedido en el TODO 3. [/0.5]
+
 TODO 4: Agregar el atributo obtenga el valor asociado al objeto Cat. [/0.5]
+
 TODO 5: Describe qué deberías hacer si se quiere mostrar un Grid en vez de una lista lineal. [/1ps]
+
 TODO 6: Completa los detalles del "cat" seleccionado. Para ello, debes ir al archivo `CatDetailsFragment.kt` y a `fragment_cat_details.xml` y commpletar lo necesario para poder visualizar el nombre del Cat y el atributo agregado. [/1.25pts]
+
 TODO 7: Describe en el README los pasos a seguir para poder crear una lista de elementos con RecyclerViews. [/1.25pts]
 
 
